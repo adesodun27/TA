@@ -11,27 +11,26 @@ const Nav = () => {
   };
 
   return (
-    <header className=" py-7 md:px-[100px] px-[50px] bg-white w-full max-container">
+    <header className=" py-7 md:px-[100px] pl-4 pr-[24px] xl:pl-[208px] md:pl-16 bg-white w-full max-container">
       <nav className="flex justify-between items-center">
         <div className="font-jaini font-normal text-[48px] leading-[48px] text-black">
           <h1>TA</h1>
         </div>
 
+        <ul className="flex justify-end items-center gap-6 max-sm:hidden ">
+          {navLinks.map((item, index) => (
+            <li key={item.label}>
+              <a
+                href={item.href}
+                className="font-satoshi leading-[16px] text-base text-button font-normal bg-buttonbg rounded-[32px] py-1.5 px-3"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-          <ul className="flex justify-end items-center gap-6 max-lg:hidden ">
-            {navLinks.map((item, index) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  className="font-satoshi leading-[16px] text-base text-button font-normal bg-buttonbg rounded-[32px] py-1.5 px-3"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-        <div className="hidden max-lg:block" onClick={toggleDropdown}>
+        <div className="hidden max-sm:block" onClick={toggleDropdown}>
           <img
             src={isDropdownOpen ? close : hamburger}
             alt="Menu Icon"

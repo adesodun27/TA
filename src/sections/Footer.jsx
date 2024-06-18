@@ -3,9 +3,9 @@ import { footerIcons } from "../constants";
 
 const Footer = () => {
   return (
-    <section className=" pt-16 xl:px-[100px] bg-white w-full max-container">
-      <div className="flex xl:flex-row flex-col gap-4 justify-between items-center border-t-[1px] border-social py-4">
-        <div className="flex flex-col gap-2 xl:w-[721px]">
+    <section className=" md:pt-16 pt-0 md:px-[100px] px-4 md:pb-0 pb-16 bg-white w-full max-container">
+      <div className="flex md:flex-row flex-col md:gap-4 gap-16 md:justify-between md:items-center justify-start border-t-[1px] border-social md:py-4 pt-16">
+        <div className="flex flex-col gap-2 md:w-[721px] w-[343px]">
           <h1 className="font-jaini font-normal text-[48px] leading-[48px] text-black">
             TA
           </h1>
@@ -13,7 +13,7 @@ const Footer = () => {
             Result-driven Front-end Developer
           </p>
         </div>
-        <div className="flex justify-end items-center gap-1">
+        <div className="flex md:justify-end md:items-center md:gap-1 gap-2">
           {footerIcons.map((item, index) => (
             <a
               key={index}
