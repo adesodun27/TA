@@ -1,11 +1,25 @@
+import React from "react";
+import "./index.css";
+import Nav from "./components/Nav"
+import {Hero, Frame1, Footer} from  "./sections"
 
-import './App.css'
 
-function App() {
-
+const App = () => {
   return (
-<section>App</section>
-  )
-}
+    <section className="relative overflow-hidden">
+      <Nav />
+      <section>
+        <Hero/>
+      </section>
+      <section>
+        <Frame1 />
+      </section>
+      <section>
+        <Footer/>
+      </section>
+   </section>
+  );
+};
 
-export default App
+export default App;
+

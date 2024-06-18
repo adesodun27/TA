@@ -1,3 +1,44 @@
+/* src/fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('./Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('./Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
+       url('./Fonts/WEB/fonts/WEB/fonts/Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
