@@ -13,16 +13,16 @@ const Footer = () => {
             Result-driven Front-end Developer
           </p>
         </div>
-        <div className="flex md:justify-end md:items-center md:gap-1 gap-2">
+        <div className="flex md:justify-end md:items-center md:gap-1 gap-4">
           {footerIcons.map((item, index) => (
             <a
               key={index}
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-social rounded-[12px] p-3"
+              className="bg-buttonbg rounded-[12px] p-3"
             >
-              <img src={item.src} alt={item.alt} />
+              <img src={item.src} alt={item.alt} className="xl:w-4 xl:h-4 w-14 h-8" />
             </a>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { navLinks } from "../constants";
 import hamburger from "../assets/icons/hamburger.svg";
-import close from "../assets/icons/close.svg"; // Add a close icon for the dropdown
+import close from "../assets/icons/close.svg";
 
 const Nav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <header className=" py-7 md:px-[100px] pl-4 pr-[24px] xl:pl-[208px] md:pl-16 bg-white w-full max-container">
+    <header className="py-7 md:px-[100px] pl-4 pr-[24px] xl:pl-[208px] md:pl-16 bg-white w-full max-container">
       <nav className="flex justify-between items-center">
         <div className="font-jaini font-normal text-[48px] leading-[48px] text-black">
           <h1>TA</h1>
@@ -40,23 +40,33 @@ const Nav = () => {
         </div>
       </nav>
 
-      {isDropdownOpen && (
-        <div className="absolute top-16 right-0 w-full bg-white shadow-md animate-slide-down">
-          <ul className="flex flex-col items-center gap-4 py-4">
-            {navLinks.map((item, index) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  className="font-satoshi leading-normal text-lg text-button"
-                  onClick={toggleDropdown}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+      <div
+        className={`fixed inset-0 bg-white transform ${
+          isDropdownOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out`}
+      >
+        <div className="flex justify-between items-center py-7 px-4 md:px-[100px] xl:pl-[208px]">
+          <div className="font-jaini font-normal text-[48px] leading-[48px] text-black">
+            <h1>TA</h1>
+          </div>
+          <div onClick={toggleDropdown}>
+            <img src={close} alt="Close Icon" width={25} height={25} />
+          </div>
         </div>
-      )}
+        <ul className="flex flex-col items-center gap-4 py-4 mt-8">
+          {navLinks.map((item, index) => (
+            <li key={item.label}>
+              <a
+                href={item.href}
+                className="font-satoshi leading-normal text-lg text-button"
+                onClick={toggleDropdown}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };

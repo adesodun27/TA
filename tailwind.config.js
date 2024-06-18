@@ -30,6 +30,20 @@ export default {
       black: "900",
     },
     extend: {
+      animation: {
+        "slide-in-right": "slide-in-right 0.3s ease-out",
+        "slide-out-right": "slide-out-right 0.3s ease-out",
+      },
+      keyframes: {
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "slide-out-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+      },
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
         jaini: ["Jaini", "sans-serif"],
@@ -38,7 +52,7 @@ export default {
         primary: "#131111",
         secondary: "#292929",
         black: "#000000",
-        buttonbg: "#DBDBDB",
+        buttonbg: "#DFDFDF",
         button: "#1B1F27",
         footer: "#666666",
         social: "#CDCDCD",
@@ -47,6 +61,9 @@ export default {
         wide: "1440px",
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };
