@@ -53,7 +53,7 @@ const Nav = () => {
             <img src={close} alt="Close Icon" width={25} height={25} />
           </div>
         </div>
-        <ul className="flex flex-col items-center gap-4 py-4 mt-8">
+        <ul className="flex flex-col items-center gap-8 py-4 mt-2">
           {navLinks.map((item, index) => (
             <li key={item.label}>
               <a

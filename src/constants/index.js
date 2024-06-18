@@ -25,7 +25,7 @@ export const footerIcons = [
   {
     src: email,
     alt: "email",
-    href: "https://drive.google.com/file/d/1_L9pe2PRJGmdVXHbpDVtdFEjqrld1Tvv/view?usp=drive_link",
+    href: "mailto:adesoduntitilope05@gmail.com",
   },
   { src: twitter, alt: "twitter", href: "https://x.com/TitilopeAd6040" },
 ];
