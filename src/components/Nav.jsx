@@ -23,6 +23,8 @@ const Nav = () => {
               <a
                 href={item.href}
                 className="font-satoshi leading-[16px] text-base text-button font-normal bg-buttonbg rounded-[32px] py-1.5 px-3"
+                target={item.label === "Resume" ? "_blank" : ""}
+                rel={item.label === "Resume" ? "noopener noreferrer" : ""}
               >
                 {item.label}
               </a>
