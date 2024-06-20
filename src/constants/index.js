@@ -41,6 +41,14 @@ export const frame1 = [
     githubRepoUrl: "https://github.com/adesodun27/Real-Estate",
   },
   {
+    image: Frame4,
+    Header: "Nike",
+    details:
+      "Independently developed a responsive Nike product page, leveraging tutorials and guidance from YouTube videos. This project marked my introduction to using Tailwind CSS and further solidified my proficiency in front-end development. By implementing HTML, CSS, and integrating React for dynamic components, I focused on creating a visually compelling and user-friendly interface. This experience enhanced my understanding of responsive design principles, component-based architecture, and utilizing Tailwind CSS for efficient styling.",
+    liveProjectUrl: "https://tailwind-nine-sigma.vercel.app/",
+    githubRepoUrl: "https://github.com/adesodun27/tailwind",
+  },
+  {
     image: Frame1,
     Header: "Todo",
     details:
@@ -63,13 +71,5 @@ export const frame1 = [
       "Designed and implemented a user-friendly landing page for a Luxury Jewelry brand as part of an assignment from Coursera. This project allowed me to showcase my skills in front-end development, focusing on creating an engaging and visually appealing interface using HTML and CSS. By incorporating best practices in web design, such as responsive layout techniques and aesthetic considerations, I aimed to deliver a seamless user experience.",
     liveProjectUrl: "https://cousera-project-eta.vercel.app/",
     githubRepoUrl: "https://github.com/adesodun27/cousera-project",
-  },
-  {
-    image: Frame4,
-    Header: "Nike",
-    details:
-      "Independently developed a responsive Nike product page, leveraging tutorials and guidance from YouTube videos. This project marked my introduction to using Tailwind CSS and further solidified my proficiency in front-end development. By implementing HTML, CSS, and integrating React for dynamic components, I focused on creating a visually compelling and user-friendly interface. This experience enhanced my understanding of responsive design principles, component-based architecture, and utilizing Tailwind CSS for efficient styling.",
-    liveProjectUrl: "https://tailwind-nine-sigma.vercel.app/",
-    githubRepoUrl: "https://github.com/adesodun27/tailwind",
   },
 ];
